@@ -36,15 +36,17 @@ print(f"{celsius}°C is equal to {fahrenheit}°F")
 -------------------------------------------------------------------------------------------------------------------------
 # 4. Python program to find the area of a triangle whose sides are given
 
-# Take input from the user
-a = float(input("Enter the first side: "))
-b = float(input("Enter the second side: "))
-c = float(input("Enter the third side: "))
+# Get the lengths of the three sides from the user
+
+Side1 = float(input("Enter the length of the first side: "))
+Side2 = float(input("Enter the length of the second side: "))
+Side3 = float(input("Enter the length of the third side: "))
 
 # Calculate the semi-perimeter
-s = (a + b + c) / 2
+s = (Side1 + Side2 + Side3) / 2
 
-# Calculate the area
-area = (s * (s - a) * (s - b) * (s - c)) ** 0.5
+# Calculate the area using Heron's formula
+area = (s * (s - Side1) * (s - Side2) * (s - Side3)) ** 0.5
 
+# Print the area
 print(f"The area of the triangle is: {area:.2f}")
