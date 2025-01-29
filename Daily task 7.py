@@ -58,6 +58,6 @@ def count_vowels(s):
 
 input_str = "Welcome to Python Assignment"
 count_vowels(input_str)
-```
 
-These programs efficiently solve each of your problems. Let me know if you need modifications! 🚀
+
+
